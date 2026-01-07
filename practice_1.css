@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: linear-gradient(  to right, rgba(21, 21, 21, 0.5)50%, rgba(26, 25, 25, 0.5)50%), url('WhatsApp Image 2025-12-22 at 8.44.43 PM.jpeg');
+}   
+
+.head{
+background-color:white;
+padding: 32px;
+margin: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 10px;
+}
+
+#a img{
+    width: 250px;
+    height: 60px;
+    border-radius: 2%;
+    margin-left: 10px;
+}
+
+#b ul{
+display: flex;
+}
+
+#b li{
+list-style: none;
+margin:  15px;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+ul li a:hover{
+    color: rgb(13, 188, 241);
+}
+
+.main{
+    margin-top: 15px;
+    margin-left: 700px;
+    width: 750px;
+    height: 750px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#c{
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;  
+    text-align:center;
+    font-size: 28px;    
+    color:indigo;
+}
+#c h1{ 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#c p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#d{
+    width: 600px;
+    height: 500px;
+    margin-left: 50px;
+    padding: 5px;
+    border: 2px solid #aa1e8e;
+    border-radius: 5px;
+    background-color: #4ca98c;
+    align-content: center;
+}   
+#d h2{
+    text-align: center;
+    color: #ce1b1b;
+}
+#d form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#d input[type="text"],
+#d input[type="password"]{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#d input[type="submit"]{
+    width: 50%;
+    padding: 8px;
+    margin: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #cc2d2d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+#d input[type="submit"]:hover{
+    background-color: #0ca6f9;
+}
+#d a{
+    text-decoration: none;
+    color: #0000ee;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#d a:hover{
+    color: #ff0000;
+}
+#d p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#d h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} 
