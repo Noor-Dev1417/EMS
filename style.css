@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1d8f7a, #0a2a35);
+  overflow: hidden;
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Glass panel */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 50px;
+  padding: 8px 80px;
+  justify-content: center;
+
+}
+
+/* Center content */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-items:center;
+  color: white;
+  animation: fadeUp 0.8s ease;
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.logo img{
+    width: 350px;
+    height: 200px;
+    filter: drop-shadow(0 6px 18px  rgba(0,0,0,0.25));
+    animation: logoFadec 0.9s ease;
+
+}
+h1 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 50px;
+}
+
+/* Button */
+.btn {
+  padding: 15px 70px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  font-size: 28px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background-color:brown;
+}
+
+/* Cards */
+.card {
+  position: absolute;
+  width: 230px;
+  height: 145px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+  z-index: 1;
+  will-change: transform;
+  transition: transform 0.15s ease-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card positions */
+.left.top { top: 70px; left: 90px; }
+.left.bottom { bottom: 90px; left: 130px; }
+.right.top { top: 80px; right: 110px; }
+.right.bottom { bottom: 90px; right: 130px; }
+.left.mid { top: 50%; left: 40px; transform: translateY(-50%) rotate(-6deg); }
+.right.mid { top: 50%; right: 40px; transform: translateY(-50%) rotate(6deg); }
+
+.center.top { top: 40px; left: 50%; transform: translateX(-50%) rotate(-4deg); }
+
+.center.bottom { bottom: 40px; left: 50%; transform: translateX(-50%) rotate(4deg); }
+
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 30px; }
+  .glass { padding: 30px; }
+  .card { width: 160px; height: 110px; }
+}
